@@ -1,68 +1,56 @@
-*{
-    margin:0px;
-}
-
 
 /* FONT INIT */
-@font-face {
-     font-family: Font1;  /* Font1 c'est le nom qu'on donne a notre police initialisé d'après le fichier "src: url();", on peux le nommer comme on le souhaite */
-    src: url(font/FUTRFW.ttf);
+
+/* @import url comme ici permet d'importer une police depuis google 'fonts.google.com' j'ai trouvé ça plus simple que de devoir dl les fichiers 1 par 1*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,400&family=Poppins:wght@100;300;400;500;600&display=swap');
+
+/* les lignes qui suivent vont permettre d'utiliser les polices que j'ai importer, j'en ai importer que deux pour l'instant */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+/* INIT COLOR VARIABLE */
+:root{
+    --grey: #333;  
+    --lblue: #3db5d3;
+    --red:#fa4f09;
 }
-@font-face {
-    font-family: Hackregu;
-    src: url(font/Hack-Regular.ttf);
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
 }
-@font-face {
-    font-family: Hackbo;
-    src: url(font/Hack-Bold.ttf);
-}
-@font-face {
-    font-family: Hackboit;
-    src: url(font/Hack-BoldItalic.ttf);
-}
-@font-face {
-    font-family: Hackit;
-    src: url(font/Hack-Italic.ttf);
-}
-@font-face {
-    font-family: Font6;
-    src: url(font/Universal\ Knowledge.ttf);
-}
-/* HEADER */
+
+/* NAVBAR TOP */
 
 header{
-    width: 100%;
-    height: 100px;
-    background-color: #333;
-    position: fixed;
-    font-family: Hackbo;
-
+    position: sticky;
+    top:0; left:0; right:0;
+    /*z-index: 1000;*/
+    background-color: var(--grey);
+    display: flex;
+    align-items: center;
+    padding:2rem 9%;
+    color: white;
 }
+.navbar{
+    margin-left: 48%;
+}
+.navbar a{
+    margin-right: 1rem;
+    font-size: 17px;
+    color:var(--lblue);
+}
+    a:hover{
+      color:var(--red);
+    }
 
 header h1{
-    margin-left:50px;
-    margin-top:15px;
-    color: white;
-}
-header ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-header a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-
-}
-header li{
-    display:inline;
-    float: right;
-}
-header li a:hover {
-    background-color: #111;
+    font-size: 27px;;
 }
