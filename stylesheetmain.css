@@ -88,20 +88,27 @@ header div{
     background-color: var(--lblue);
     text-align: center;
     color: black;
-    text
+    text-align: center;
 }
 
 .b2iut{
     font-size: 120%;
     align-items: center;
     color:var(--darkgrey);
-
+    display: flex;
+    margin: 0 auto;
+    /* margin-left: 40%; */
 }
 
-.logoiutb2iut{
-    width: 10%;
+.imgiutb2iut{
+    width: 170px;
     height: 100%;
 }
+#transitionpage p {
+    text-align: center;
+}
+
+
 
 /* DIV CONTENT  */
 
