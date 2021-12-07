@@ -9,11 +9,14 @@
 /* font-family: 'Poppins', sans-serif; */
 
 /* INIT COLOR VARIABLE */
+
 :root{
     --grey: #333;  
     --lblue: #3db5d3;
     --red:#fa4f09;
 }
+
+/* INIT GLOBAL SETTINGS */
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -24,7 +27,7 @@
     border:none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: all .2s linear;
+    transition: all .3s linear;
 }
 
 /* NAVBAR TOP */
@@ -66,24 +69,42 @@ header div{
     margin-right:20px;
 }
 
-.div1{
-    background-color: lightgray;
-    height: 500px;
 
-}
-.div2{
-    background-color: white;
-    height: 500px;
+/* DIV CONTENT */
 
-}
-.div3{
+#div1{
     background-color: rgb(230, 230, 230);
-    height: 500px;
+    height: 800px;
 
 }
-.div4{
+#div2{
     background-color: white;
-    height: 500px;
+    height: 700px;
+
+}
+#div3{
+    background-color: rgb(230, 230, 230);
+    height: 700px;
+
+}
+#div4{
+    background-color: white;
+    height: 700px;
+
+}
+#div5{
+    background-color: rgb(230, 230, 230);
+    height: 700px;
+
+}
+#div6{
+    background-color: white;
+    height: 700px;
+
+}
+#div7{
+    background-color: rgb(230, 230, 230);
+    height: 700px;
 
 }
 
@@ -92,15 +113,20 @@ footer{
     background-color:var(--grey);
     text-align: center;
     align-items: center;
-    height: 200px;;
+    height: 270px;;
     color:white;
 }
-footer p{
-    align-items: center;
-}
+
 .logofooter{
     height: 50px;
     width: 50px;
     margin-top: 40px;
 }
-
+.logofootersuite{
+    height: 45px;
+    width: 45px;
+    margin:20px;
+}
+.allrightreserved{
+    margin-top: 30px;
+}
