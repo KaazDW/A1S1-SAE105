@@ -72,17 +72,35 @@ header div{
 
 }
 .div2{
-    background-color: lightgreen;
+    background-color: white;
     height: 500px;
 
 }
 .div3{
-    background-color: lightsteelblue;
+    background-color: rgb(230, 230, 230);
     height: 500px;
 
 }
 .div4{
-    background-color: lightskyblue;
+    background-color: white;
     height: 500px;
 
 }
+
+/* FOOTER */
+footer{
+    background-color:var(--grey);
+    text-align: center;
+    align-items: center;
+    height: 200px;;
+    color:white;
+}
+footer p{
+    align-items: center;
+}
+.logofooter{
+    height: 50px;
+    width: 50px;
+    margin-top: 40px;
+}
+
