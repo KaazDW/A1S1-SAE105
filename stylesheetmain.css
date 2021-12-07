@@ -14,6 +14,7 @@
     --grey: #333;  
     --lblue: #3db5d3;
     --red:#fa4f09;
+    --darkgrey: rgb(34, 34, 34);
 }
 
 /* INIT GLOBAL SETTINGS */
@@ -70,7 +71,39 @@ header div{
 }
 
 
-/* DIV CONTENT */
+/* CONTENT */
+
+#navbartest{
+    height: 20px;
+    background-color: var(--grey);
+    color:white;
+    font-size: 80%;
+    text-align:center;
+}
+
+/* BACK 2 IUT DIV  */
+
+#transitionpage{
+    height: 60px;
+    background-color: var(--lblue);
+    text-align: center;
+    color: black;
+    text
+}
+
+.b2iut{
+    font-size: 120%;
+    align-items: center;
+    color:var(--darkgrey);
+
+}
+
+.logoiutb2iut{
+    width: 10%;
+    height: 100%;
+}
+
+/* DIV CONTENT  */
 
 #div1{
     background-color: rgb(230, 230, 230);
