@@ -30,6 +30,9 @@
     text-transform: capitalize;
     transition: all .3s linear;
 }
+main{
+    margin-left: 120px;
+}
 
 /* NAVBAR TOP */
 
@@ -45,9 +48,10 @@ header{
     /*Ce sont les deux commandes qui suivent qui permette de gérer les distance responsiv entre le titre et les liens navbar*/
     display:flex;
     justify-content: space-between;
+    min-width: 1000px;;
 }
 header h1{
-    font-size: 145%;
+    font-size: 20px;;
 }
 header div{
     display: inline-flex;
@@ -65,8 +69,8 @@ header div{
 }
 
 .logonavbar{
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 70px;
     margin-right:20px;
 }
 
@@ -114,8 +118,11 @@ header div{
 
 #div1{
     background-color: rgb(230, 230, 230);
-    height: 800px;
+    height: 500px;
 
+}
+.imgdiv1{
+    margin:35px;
 }
 #div2{
     background-color: white;
@@ -148,6 +155,47 @@ header div{
 
 }
 
+
+
+/* SIDEBAR */
+.sidebar {
+    background-color: var(--lblue);
+    position: fixed;
+    height: 100%;
+    width: 140px;
+}
+.sidebar ul{
+    color: white;
+}
+.titlesidebar{
+    text-decoration: underline;
+    font-size: 15px;;
+}
+.logosidebar{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    margin-left: 15px;
+}
+.sidebar_title{
+    display: flex;
+    margin-top:15px;
+}
+.imglink_sidebar{
+    height: 10px;
+    width: 20px;
+    margin-left:5px;
+    margin-right: 5px;
+}
+.sidebar a:hover{
+    color:var(--red);
+    text-decoration: underline;
+}
+
+
+
+
+
 /* FOOTER */
 footer{
     background-color:var(--grey);
@@ -157,9 +205,16 @@ footer{
     color:white;
 }
 
+
+/* POUR LOGO CLASSIQUE CARRE
 .logofooter{
     height: 50px;
     width: 50px;
+    margin-top: 40px;
+} */
+.logofooter{
+    height: 100px;
+    width: 280px;
     margin-top: 40px;
 }
 .logofootersuite{
@@ -169,4 +224,10 @@ footer{
 }
 .allrightreserved{
     margin-top: 30px;
+}
+.liens_ucbl_footer{
+    color: white;
+}
+.liens_ucbl_footer a:hover{
+    text-decoration: underline;
 }
