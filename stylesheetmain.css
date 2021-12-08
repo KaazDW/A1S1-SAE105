@@ -9,11 +9,15 @@
 /* font-family: 'Poppins', sans-serif; */
 
 /* INIT COLOR VARIABLE */
+
 :root{
     --grey: #333;  
     --lblue: #3db5d3;
     --red:#fa4f09;
+    --darkgrey: rgb(34, 34, 34);
 }
+
+/* INIT GLOBAL SETTINGS */
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -24,7 +28,7 @@
     border:none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: all .2s linear;
+    transition: all .3s linear;
 }
 
 /* NAVBAR TOP */
@@ -66,23 +70,103 @@ header div{
     margin-right:20px;
 }
 
-.div1{
-    background-color: lightgray;
-    height: 500px;
+
+/* CONTENT */
+
+#navbartest{
+    height: 20px;
+    background-color: var(--grey);
+    color:white;
+    font-size: 80%;
+    text-align:center;
+}
+
+/* BACK 2 IUT DIV  */
+
+#transitionpage{
+    height: 60px;
+    background-color: var(--lblue);
+    text-align: center;
+    color: black;
+    text-align: center;
+}
+
+.b2iut{
+    font-size: 120%;
+    align-items: center;
+    color:var(--darkgrey);
+    display: flex;
+    margin: 0 auto;
+    /* margin-left: 40%; */
+}
+
+.imgiutb2iut{
+    width: 170px;
+    height: 100%;
+}
+#transitionpage p {
+    text-align: center;
+}
+
+
+
+/* DIV CONTENT  */
+
+#div1{
+    background-color: rgb(230, 230, 230);
+    height: 800px;
 
 }
-.div2{
-    background-color: lightgreen;
-    height: 500px;
+#div2{
+    background-color: white;
+    height: 700px;
 
 }
-.div3{
-    background-color: lightsteelblue;
-    height: 500px;
+#div3{
+    background-color: rgb(230, 230, 230);
+    height: 700px;
 
 }
-.div4{
-    background-color: lightskyblue;
-    height: 500px;
+#div4{
+    background-color: white;
+    height: 700px;
 
+}
+#div5{
+    background-color: rgb(230, 230, 230);
+    height: 700px;
+
+}
+#div6{
+    background-color: white;
+    height: 700px;
+
+}
+#div7{
+    background-color: rgb(230, 230, 230);
+    height: 700px;
+
+}
+
+/* FOOTER */
+footer{
+    background-color:var(--grey);
+    text-align: center;
+    align-items: center;
+    height: 270px;;
+    color:white;
+}
+
+.logofooter{
+    height: 50px;
+    width: 50px;
+    margin-top: 40px;
+}
+.logofootersuite{
+    height: 45px;
+    width: 45px;
+    margin:20px;
+}
+.allrightreserved{
+    margin-top: 30px;
 }
