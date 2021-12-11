@@ -28,7 +28,7 @@
     border:none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: all .3s linear;
+    transition: all .2s linear;
 }
 main{
     margin-left: 140px;
