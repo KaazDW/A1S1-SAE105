@@ -12,7 +12,7 @@
 
 :root{
     --grey: #333;  
-    --lblue: #3db5d3;
+    --lblue: #50b9ff;
     --red:#fa4f09;
     --darkgrey: rgb(34, 34, 34);
 }
@@ -31,7 +31,7 @@
     transition: all .3s linear;
 }
 main{
-    margin-left: 120px;
+    margin-left: 140px;
 }
 
 /* NAVBAR TOP */
@@ -118,11 +118,26 @@ header div{
 
 #div1{
     background-color: rgb(230, 230, 230);
-    height: 500px;
-
+    height: 600px;
+    display:flex;
+    justify-content: space-between;
+    min-width: 1000px;
+}
+#div1 h1{
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right:50px;
+    font-size:48px;
 }
 .imgdiv1{
     margin:35px;
+    margin-top:50px;
+    width: 40%;
+    height: 38%;
+}
+.imgdivbarre{
+    width: 15px;
+    height: 50px;;
 }
 #div2{
     background-color: white;
@@ -164,8 +179,9 @@ header div{
     height: 100%;
     width: 140px;
 }
-.listesidebar li{
+.lisidebar{
     color: white;
+    text-decoration: none;
 }
 .titlesidebar{
     text-decoration: underline;
@@ -174,8 +190,8 @@ header div{
 .logosidebar{
     height: 20px;
     width: 20px;
-    margin-right: 5px;
-    margin-left: 15px;
+    margin-right: 8px;
+    margin-left: 9px;
 }
 .sidebar_title{
     display: flex;
