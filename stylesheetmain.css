@@ -12,7 +12,8 @@
 
 :root{
     --grey: #333;  
-    --lblue: #50b9ff;
+    /* --lblue: #50b9ff; */
+    --lblue: rgb(241, 169, 121);    
     --red:#fa4f09;
     --darkgrey: rgb(34, 34, 34);
 }
@@ -47,11 +48,11 @@ header{
     color: white;
     /*Ce sont les deux commandes qui suivent qui permette de gérer les distance responsiv entre le titre et les liens navbar*/
     display:flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     min-width: 1000px;;
 }
 header h1{
-    font-size: 20px;;
+    font-size: 28px;;
 }
 header div{
     display: inline-flex;
@@ -60,7 +61,7 @@ header div{
 
 .navbar a{
     margin-right: 1rem;
-    font-size: 17px;
+    font-size: 19px;
     text-decoration: none;
     color:var(--lblue);
 }
@@ -69,8 +70,8 @@ header div{
 }
 
 .logonavbar{
-    width: 200px;
-    height: 70px;
+    width: 35px;
+    height: 60px;
     margin-right:20px;
 }
 
@@ -116,36 +117,60 @@ header div{
 
 /* DIV CONTENT  */
 
-#div1{
+#div1, .div1-suite{
     background-color: rgb(230, 230, 230);
+}
+#div1{
     height: 600px;
     display:flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     min-width: 1000px;
 }
+/* .titre{
+    background-color: var(--grey);
+    height: 50%;
+
+} */
 #div1 h1{
     margin-top: 150px;
     margin-left: 50px;
     margin-right:50px;
-    font-size:48px;
+    font-size:45px;
+    width: 550px;
+    background-color: var(--grey);
+    border-radius: 25px;
+    padding: 30px;
+    color: white;
 }
 .imgdiv1{
     margin:35px;
     margin-top:130px;
-    width: 800px;
+    width: 850px;
     height: 300px;
 }
+.div1-suite{
+    display:flex;
+    justify-content: space-between; 
+    padding-left: 100px;
+    padding-right:100px;
+    padding-bottom: 50px;
+}
+
 .imgdivbarre{
     width: 50px;
-    height: 500px;
-    margin-top: 50px;
-    margin-left: 200px;
+    height: 350px;
+    margin-top: 90px;
+    margin-left: 40px;
 }
 #div2{
     background-color: white;
     height: 700px;
-
 }
+.nosformations{
+    margin-top:20px;
+    margin-left:50px;
+}
+
 #div3{
     background-color: rgb(230, 230, 230);
     height: 700px;
