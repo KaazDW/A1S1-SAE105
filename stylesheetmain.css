@@ -11,10 +11,10 @@
 /* INIT COLOR VARIABLE */
 
 :root{
-    --grey: #333;  
+    --grey: #333333;  
     /* --lblue: #50b9ff; */
-    --lblue: rgb(241, 169, 121);    
-    --red:rgb(250, 79, 9);
+    --lblue: #f1a979;    
+    --red:#fa4f09;
     --darkgrey: rgb(34, 34, 34);
 }
 
@@ -118,7 +118,7 @@ header div{
 /* DIV CONTENT  */
 
 #div1, .div1-suite{
-    background-color: rgb(230, 230, 230);
+    background-color: #e6e6e6;
 }
 #div1{
     height: 600px;
