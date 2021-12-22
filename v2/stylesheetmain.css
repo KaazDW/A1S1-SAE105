@@ -12,8 +12,7 @@
 
 :root{
     --grey: #333333;  
-    /* --lblue: #50b9ff; */
-    --lblue: #f1a979;    
+    --lorange: #f1a979;    
     --red:#fa4f09;
     --darkgrey: rgb(34, 34, 34);
 }
@@ -24,28 +23,97 @@
     font-family: 'Poppins', sans-serif;
     margin:0;
     padding:0;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
-main{
-    margin-left: 250px;
-    margin-right: 250px;
-}
+
 
 
 /* HEADER */
 
+header{
+    position:fixed;
+    width: 100%;
+}
 .topheader{
     background-color: var(--darkgrey);
     color: white;
     text-align: center;
 }
 .topheader h1{
-    padding: 15px;
+    padding: 12px;
     margin: 0;
+    font-size: 35px;
 }
 .headernavbar{
+    text-decoration: none;
     text-align: center;
     margin: 0;
     background-color: var(--grey);
+    padding: 10px;
+}
+.headernavbar a{
+    text-decoration: none;
+    color: var(--lorange);
+    margin-left: 15px;
+}
+.headernavbar a:hover{
+    color: var(--red);
+}
+
+
+/* MAIN */
+
+main{
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-top: 110px;
+}
+.divtest1 {
+    background-color: lightblue;
+    height: 400px;
+}
+.divtest2 {
+    background-color: lightskyblue;
+    height: 400px;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    background-color:var(--grey);
+    text-align: center;
+    align-items: center;
+    height: 340px;;
+    color:white;
+}
+
+
+/* POUR LOGO CLASSIQUE CARRE
+.logofooter{
+    height: 50px;
+    width: 50px;
+    margin-top: 40px;
+} */
+
+.logofooter{
+    height: 100px;
+    width: 280px;
+    margin-top: 40px;
+}
+.footerimg{
+    height: 45px;
+    width: 45px;
+    margin:20px;
+}
+.allrightreserved{
+    margin-top: 30px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: var(--red);
 }
