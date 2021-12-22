@@ -1,0 +1,383 @@
+
+/* FONT INIT */
+
+/* @import url comme ici permet d'importer une police depuis google 'fonts.google.com' j'ai trouvé ça plus simple que de devoir dl les fichiers 1 par 1*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,400&family=Poppins:wght@100;300;400;500;600&display=swap');
+
+/* les lignes qui suivent vont permettre d'utiliser les polices que j'ai importer, j'en ai importer que deux pour l'instant */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+/* INIT COLOR VARIABLE */
+
+:root{
+    --grey: #333333;  
+    /* --lblue: #50b9ff; */
+    --lblue: #f1a979;    
+    --red:#fa4f09;
+    --darkgrey: rgb(34, 34, 34);
+}
+
+/* INIT GLOBAL SETTINGS */
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+main{
+    margin-left: 260px;
+    margin-right: 220px;
+}
+
+/* NAVBAR TOP */
+
+header{
+    position: sticky;
+    top:0; left:0; right:0;
+    /*z-index: 1000;*/
+    background-color: var(--grey);
+    display: flex;
+    align-items: center;
+    padding:0.5rem 2%;
+    color: white;
+    /*Ce sont les deux commandes qui suivent qui permette de gérer les distance responsiv entre le titre et les liens navbar*/
+    display:flex;
+    justify-content: space-between; 
+    min-width: 1000px;
+}
+header h1{
+    font-size: 20px;;
+}
+header div{
+    display: inline-flex;
+    align-items: center;
+}
+
+.navbar a{
+    margin-right: 1rem;
+    font-size: 18px;
+    text-decoration: none;
+    color:var(--lblue);
+}
+.navbar a:hover{
+    color:var(--red);
+}
+
+.logonavbar{
+    width: 35px;
+    height: 60px;
+    margin-right:20px;
+}
+
+
+/* CONTENT */
+
+#navbartest{
+    height: 20px;
+    background-color: var(--grey);
+    color:white;
+    font-size: 80%;
+    text-align:center;
+}
+
+/* BACK 2 IUT DIV  */
+
+#transitionpage{
+    height: 60px;
+    background-color: var(--lblue);
+    text-align: center;
+    color: black;
+    text-align: center;
+}
+
+.b2iut{
+    font-size: 120%;
+    align-items: center;
+    color:var(--darkgrey);
+    display: flex;
+    margin: 0 auto;
+    /* margin-left: 40%; */
+}
+
+.imgiutb2iut{
+    width: 170px;
+    height: 100%;
+}
+#transitionpage p {
+    text-align: center;
+}
+
+
+
+/* DIV CONTENT  */
+
+/* #div1, .div1-suite{
+    background-color: #e6e6e6;
+} */
+#div1{
+    height: 600px;
+    display:flex;
+    justify-content: space-between; 
+    min-width: 1000px;
+    background-color: rgb(230, 230, 230);
+
+}
+#div1 .div1-suite{
+    background-color: rgb(230, 230, 230);
+
+}
+.background{
+    /* background-image: url(img/background.png); */
+    background-size: auto;
+    height: 680px;
+}
+.imgtitre{
+    height: 150px;
+    width: 90px;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+.titre{
+    justify-content: space-between;
+    display: flex;
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right:30px;
+    width: 600px;
+    height: 200px;
+    background-color: var(--grey);
+    border-radius: 25px;
+    padding: 10px;
+    padding-right: 60px;
+    color: white;
+} 
+#div1 h1{
+    font-size:270%;
+    margin-top:30px;;  
+    text-align: left;  
+}
+.pdiv1{
+    text-decoration: none;
+}
+.pdiv1 :hover{
+    color: green;
+}
+
+.imgdiv1{
+    margin:35px;
+    margin-top:110px;
+    width: 850px;
+    height: 300px;
+}
+.div1-suite{
+    display:flex;
+    justify-content: space-between; 
+    padding-left: 100px;
+    padding-right:100px;
+    padding-bottom: 50px;
+    background-color: rgb(230, 230, 230);
+
+}
+
+.imgdivbarre{
+    width: 50px;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 0px;
+}
+#div2{
+    background-color: white;
+    height: 700px;
+}
+.nosformations{
+    margin-top:20px;
+    margin-left:50px;
+}
+
+#div3{
+    background-color: rgb(230, 230, 230);
+    height: 700px;
+
+}
+#div4{
+    background-color: white;
+    height: 700px;
+
+}
+#div5{
+    background-color: rgb(230, 230, 230);
+    height: 700px;
+
+}
+#div6{
+    background-color: white;
+    height: 700px;
+
+}
+#div7{
+    background-color: rgb(230, 230, 230);
+    height: 700px;
+
+}
+
+
+
+/* SIDEBAR */
+.sidebar {
+    background-color: var(--lblue);
+    position: fixed;
+    height: 100%;
+    width: 140px;
+}
+.lisidebar{
+    color: white;
+    text-decoration: none;
+}
+.titlesidebar{
+    text-decoration: underline;
+    font-size: 15px;;
+}
+.logosidebar{
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+    margin-left: 9px;
+}
+.sidebar_title{
+    display: flex;
+    margin-top:15px;
+}
+.imglink_sidebar{
+    height: 10px;
+    width: 20px;
+    margin-left:5px;
+    margin-right: 5px;
+}
+.sidebar a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+
+
+
+
+/* FOOTER */
+footer{
+    background-color:var(--grey);
+    text-align: center;
+    align-items: center;
+    height: 340px;;
+    color:white;
+}
+
+
+/* POUR LOGO CLASSIQUE CARRE
+.logofooter{
+    height: 50px;
+    width: 50px;
+    margin-top: 40px;
+} */
+
+.logofooter{
+    height: 100px;
+    width: 280px;
+    margin-top: 40px;
+}
+.logofootersuite{
+    height: 45px;
+    width: 45px;
+    margin:20px;
+}
+.allrightreserved{
+    margin-top: 30px;
+}
+.liens_ucbl_footer{
+    color: white;
+    text-decoration: none;
+}
+/* .liens_ucbl_footer :hover{
+    color:white;
+    text-decoration: underline;
+} */
+.liens_ucbl_footer :hover{
+    color: green;
+}
+
+
+
+
+.slider {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    margin: 150px auto;
+}
+.slides {
+    width: calc(500px * 3);
+    animation: glisse 10s infinite;
+}
+.slide {
+    float: left;
+}
+
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-500px);
+    }
+    43% {
+        transform: translateX(-500px);
+    }
+    66% {
+        transform: translateX(-1000px);
+    }
+    76% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#caroussel {
+    width: 640px;
+    overflow: hidden;
+    border: 2px solid #333;
+}
+.images{
+    display: flex;
+    animation-duration: 10s;
+    animation-name:mesImages;
+    animation-iteration-count: infinite;
+}
+@keyframes mesImages{
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-640);
+    }
+    50% {
+        transform: translateX(-1280px);
+    }
+    75% {
+        transform: translateX(-1920px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+
+}
