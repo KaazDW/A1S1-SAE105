@@ -68,24 +68,45 @@ main{
     margin-right: 250px;
     padding-top: 110px;
 }
-.div1 {
+#div1 {
+    background-color: lightblue;
+    height: 450px;
+}
+
+#div2 {
+    background-color: white;
+    height: 400px;
+}
+#div3 {
     background-color: lightblue;
     height: 400px;
 }
+#div4 {
+    background-color: white;
+    height: 400px;
+}
 .logoiutdiv1 {
-margin-left:300px;
+margin-left:280px;
 height: 300px;
 width: 850px;
 margin-top: 50px;
+margin-bottom: 50px;
 }
-.div2 {
+
+#div2 {
     /* background-color: rgb(230, 230, 230); */
     background-color: var(--grey);
     height: 600px;
+    text-align: center;
 }
 .cartes img{
-    height: 260px;
-    width: 290px;
+    height: 230px;
+    width: 270px;
+    margin: 5px;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:20px;
 }
 .cartes{
     display: flex;
@@ -98,11 +119,22 @@ margin-top: 50px;
     text-decoration: underline;
     margin-top:15px;
 }
-.cartediv{
+#div2 button{
+    background-color: var(--lorange); /* Green */
+    border: 2px solid black;
+    color: white;
+    padding: 10px 32px;
+    margin-top: 30px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+.cartediv{  
     background-color: #f1a979;
     height: 450px;
     width: 290px;
-    box-shadow: 20px 20px 20px rgb(37, 37, 37);
+    box-shadow: 20px 20px 20px rgb(27, 27, 27);
     margin : 15px;
     border-radius: 15px;
     /* ajout d'une bordure autour de chacune des "cartes" de 1px d'épaisseur, niveau esthétic je ne sais pas vrmt quoi en penser */
@@ -113,7 +145,7 @@ margin-top: 50px;
     border: 3px solid black;
     margin-left: 50px;
     margin-right:50px;
-    margin-top:10px;
+    margin-top:40px;
     padding: 10px;
     border-radius: 15px;
 } 
