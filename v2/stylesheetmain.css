@@ -68,14 +68,55 @@ main{
     margin-right: 250px;
     padding-top: 110px;
 }
-.divtest1 {
+.div1 {
     background-color: lightblue;
     height: 400px;
 }
-.divtest2 {
-    background-color: lightskyblue;
-    height: 400px;
+.logoiutdiv1 {
+margin-left:300px;
+height: 300px;
+width: 850px;
+margin-top: 50px;
 }
+.div2 {
+    /* background-color: rgb(230, 230, 230); */
+    background-color: var(--grey);
+    height: 600px;
+}
+.cartes img{
+    height: 260px;
+    width: 290px;
+}
+.cartes{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.cartes h1{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top:15px;
+}
+.cartediv{
+    background-color: #f1a979;
+    height: 450px;
+    width: 290px;
+    box-shadow: 20px 20px 20px rgb(56, 56, 56);
+    margin : 15px;
+    border-radius: 15px;
+    /* ajout d'une bordure autour de chacune des "cartes" de 1px d'épaisseur, niveau esthétic je ne sais pas vrmt quoi en penser */
+    /* border: 1px solid black; */
+}
+.cartes summary{
+    text-align: center;
+    border: 3px solid black;
+    margin-left: 50px;
+    margin-right:50px;
+    margin-top:10px;
+    padding: 10px;
+    border-radius: 15px;
+} 
 
 
 
