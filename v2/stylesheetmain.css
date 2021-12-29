@@ -89,11 +89,15 @@ main{
     height: 400px;
 }
 .logoiutdiv1 {
-margin-left:280px;
+/* margin-left:280px;
 height: 300px;
 width: 850px;
 margin-top: 50px;
-margin-bottom: 50px;
+margin-bottom: 50px; */
+height: 300px;
+width: 850px;
+display: block;
+margin: 0 auto; /*Aligne l'image automatiquement*/
 }
 
 .cartes img{
@@ -148,7 +152,17 @@ margin-bottom: 50px;
     border-radius: 15px;
 } 
 
+:target:before{ /*Pour le pb des ancres et top bar*/
+    display: block;
+    content: "";
+    height: 100px;
+    margin: -100px 0 0;    
+}
 
+img{
+    vertical-align: middle;
+    max-width: 100%; /*Conserverles tailles des images*/
+}
 
 /* FOOTER */
 
@@ -187,11 +201,4 @@ footer a{
 }
 footer a:hover{
     color: var(--red);
-}
-
-:target:before{
-    display: block;
-    content: "";
-    height: 100px;
-    margin: -100px 0 0;    
 }
