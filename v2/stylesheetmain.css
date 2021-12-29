@@ -70,13 +70,16 @@ main{
 }
 #div1 {
     background-color: lightblue;
-    height: 450px;
+    height: 500px;
 }
 
 #div2 {
-    background-color: white;
-    height: 400px;
+    /* background-color: rgb(230, 230, 230); */
+    background-color: var(--grey);
+    height: 700px;
+    text-align: center;
 }
+
 #div3 {
     background-color: lightblue;
     height: 400px;
@@ -93,12 +96,6 @@ margin-top: 50px;
 margin-bottom: 50px;
 }
 
-#div2 {
-    /* background-color: rgb(230, 230, 230); */
-    background-color: var(--grey);
-    height: 600px;
-    text-align: center;
-}
 .cartes img{
     height: 230px;
     width: 270px;
@@ -112,6 +109,7 @@ margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     color: white;
+    margin-top: 30px;
 }
 .cartes h1{
     text-align: center;
@@ -189,4 +187,11 @@ footer a{
 }
 footer a:hover{
     color: var(--red);
+}
+
+:target:before{
+    display: block;
+    content: "";
+    height: 100px;
+    margin: -100px 0 0;    
 }
