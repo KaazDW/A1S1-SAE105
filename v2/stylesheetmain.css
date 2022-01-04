@@ -14,7 +14,8 @@
     --grey: #333333;  
     --lorange: #f1a979;    
     --red:#fa4f09;
-    --darkgrey: rgb(34, 34, 34);
+    /* --darkgrey: rgb(34, 34, 34); */
+    --darkgrey: rgb(14, 14, 14);
 }
 
 /* INIT GLOBAL SETTINGS */
@@ -89,11 +90,6 @@ main{
     height: 400px;
 }
 .logoiutdiv1 {
-/* margin-left:280px;
-height: 300px;
-width: 850px;
-margin-top: 50px;
-margin-bottom: 50px; */
 height: 300px;
 width: 850px;
 display: block;
@@ -139,7 +135,7 @@ margin: 0 auto; /*Aligne l'image automatiquement*/
     box-shadow: 20px 20px 20px rgb(27, 27, 27);
     margin : 15px;
     border-radius: 15px;
-    /* ajout d'une bordure autour de chacune des "cartes" de 1px d'épaisseur, niveau esthétic je ne sais pas vrmt quoi en penser */
+    /* ajout d'une bordure autour de chacune des "cartes" de 1px d'épaisseur, niveau esthétique je ne sais pas vrmt quoi en penser */
     /* border: 1px solid black; */
 }
 .cartes summary{
@@ -161,7 +157,7 @@ margin: 0 auto; /*Aligne l'image automatiquement*/
 
 img{
     vertical-align: middle;
-    max-width: 100%; /*Conserverles tailles des images*/
+    max-width: 100%; /*Conserver les tailles des images*/
 }
 
 /* FOOTER */

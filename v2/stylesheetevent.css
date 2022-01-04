@@ -1,0 +1,133 @@
+
+/* FONT INIT */
+
+/* @import url comme ici permet d'importer une police depuis google 'fonts.google.com' j'ai trouvé ça plus simple que de devoir dl les fichiers 1 par 1*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,400&family=Poppins:wght@100;300;400;500;600&display=swap');
+
+/* les lignes qui suivent vont permettre d'utiliser les polices que j'ai importer, j'en ai importer que deux pour l'instant */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+/* INIT COLOR VARIABLE */
+
+:root{
+    --grey: #333333;  
+    --lorange: #f1a979;    
+    --red:#fa4f09;
+    /* --darkgrey: rgb(34, 34, 34); */
+    --darkgrey: rgb(14, 14, 14);
+    /* --lgrey: rgb(97, 97, 97); */
+    --lgrey: #e0b597;
+
+}
+
+/* INIT GLOBAL SETTINGS */
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    transition: all .2s linear;
+}
+main{
+    padding-top: 120px;
+    background-color: var(--darkgrey);
+    height: 3380px;
+}
+.main_div{
+    height: 1050px;
+    width: 1500px;
+    background-color: var(--lgrey);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.div_2{
+    height: 1050px;
+    width: 1500px;
+    background-color: var(--lgrey);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.div_3{
+    height: 1050px;
+    width: 1500px;
+    background-color: var(--lgrey);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+}
+body{
+    background-color: black;
+}
+
+
+/* HEADER */
+
+header{
+    position:fixed;
+    width: 100%;
+}
+.topheader{
+    /* background-color: var(--darkgrey); */
+    color: white;
+    text-align: center;
+}
+.topheader h1{
+    padding: 12px;
+    margin: 0;
+    font-size: 35px;
+}
+.headernavbar{
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    /* background-color: var(--grey); */
+    padding: 10px;
+}
+.headernavbar a{
+    text-decoration: none;
+    color: var(--lorange);
+    margin-left: 15px;
+}
+.headernavbar a:hover{
+    color: var(--red);
+}
+
+
+
+
+/* FOOTER */
+
+
+footer{
+    background-color:var(--grey);
+    text-align: center;
+    align-items: center;
+    height: 340px;
+    color:white;
+
+}
+.logofooter{
+    height: 100px;
+    width: 280px;
+    margin-top: 40px;
+}
+.footerimg{
+    height: 45px;
+    width: 45px;
+    margin:20px;
+}
+.allrightreserved{
+    margin-top: 30px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: var(--red);
+}
+
