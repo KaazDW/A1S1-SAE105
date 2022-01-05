@@ -73,7 +73,6 @@ main{
     background-color: lightblue;
     height: 500px;
 }
-
 #div2 {
     /* background-color: rgb(230, 230, 230); */
     background-color: var(--grey);
@@ -95,7 +94,16 @@ width: 850px;
 display: block;
 margin: 0 auto; /*Aligne l'image automatiquement*/
 }
+<<<<<<< Updated upstream
 
+=======
+#div2 {
+    /* background-color: rgb(230, 230, 230); */
+    background-color: var(--grey);
+    height: 600px;
+    text-align: center;
+}
+>>>>>>> Stashed changes
 .cartes img{
     height: 230px;
     width: 270px;
@@ -104,6 +112,7 @@ margin: 0 auto; /*Aligne l'image automatiquement*/
     margin-left:auto;
     margin-right: auto;
     margin-top:20px;
+    /* border: 1px solid black; */
 }
 .cartes{
     display: flex;
