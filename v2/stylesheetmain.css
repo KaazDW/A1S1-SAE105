@@ -94,16 +94,14 @@ width: 850px;
 display: block;
 margin: 0 auto; /*Aligne l'image automatiquement*/
 }
-<<<<<<< Updated upstream
 
-=======
 #div2 {
     /* background-color: rgb(230, 230, 230); */
     background-color: var(--grey);
     height: 600px;
     text-align: center;
 }
->>>>>>> Stashed changes
+
 .cartes img{
     height: 230px;
     width: 270px;
