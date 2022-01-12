@@ -11,7 +11,7 @@
     <style>
 
 
-/*CSS pour le grilles de carte en perspective*/
+/*CSS pour la grilles de carte en perspective*/
 
 .container {
   max-width: 1400px;
@@ -24,7 +24,7 @@ h1 span {
 }
 h1 span:nth-child(1) {
   font-weight: normal;
-  color: #ed5d34;
+  color: #ed5d34; /* color du titre*/
 }
 
 .card-container {
@@ -35,7 +35,7 @@ h1 span:nth-child(1) {
 }
 .card-wrapper {
   position: relative;
-  min-height: 350px;
+  min-height: 200px;
   perspective: 2000px; /*Permet de créer une perspective fictive d'une profondeur de 2000px*/
   perspective-origin: top; 
 }
@@ -49,7 +49,7 @@ h1 span:nth-child(1) {
   height: 100%;
   transform-style: preserve-3d; /*Ligne permettant de liée la carte a la relation de perceptive crée dans .card-wrapper*/
   transition: transform 0.8s cubic-bezier(0.86,0,0.07,1); /*Defini les propriété de l'animation "transform" defini juste au dessus*/
-  color: white;
+  color: white; /*color du texte de la face avant*/
   font-weight: bold;
 }
 
@@ -71,8 +71,8 @@ h1 span:nth-child(1) {
   justify-content: space-between;
 }
 
-.card-wrapper:nth-child(even) .card-front {
-  background-color: #9c9fa1;
+.card-front { /*nth-child permet de cibler un élément dont la fonction est paire par rapport a leur voisin*/
+  background-color: #ed5d34;
 }
 
 .card-front p {
@@ -97,7 +97,7 @@ h1 span:nth-child(1) {
   align-items: center;
 
 }
-.card-wrapper:nth-child(even) .card-back {
+.card-back {
   background-color: #1a2f42;
 }
 
@@ -117,12 +117,8 @@ h1 span:nth-child(1) {
   color 0.3s ease-out;
 }
 
-.card-wrapper:nth-child(odd) .card-back a:hover {
+.card-back a:hover { 
   background-color: #1a2f42;
-  color: #fff;
-}
-.card-wrapper:nth-child(even) .card-back a:hover {
-  background-color: #ed5d34;
   color: #fff;
 }
 
