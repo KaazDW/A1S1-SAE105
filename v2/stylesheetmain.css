@@ -71,7 +71,7 @@ main{
 }
 #div1 {
     background-color: lightblue;
-    height: 500px;
+    height: 400px;
 }
 #div2 {
     /* background-color: rgb(230, 230, 230); */
@@ -85,22 +85,17 @@ main{
     height: 400px;
 }
 #div4 {
-    background-color: white;
-    height: 400px;
+    background-color: var(--grey);
+    height: 700px;
 }
 .logoiutdiv1 {
-height: 300px;
+height: 250px;
 width: 850px;
 display: block;
 margin: 0 auto; /*Aligne l'image automatiquement*/
 }
 
-#div2 {
-    /* background-color: rgb(230, 230, 230); */
-    background-color: var(--grey);
-    height: 600px;
-    text-align: center;
-}
+/*DIV2*/
 
 .cartes img{
     height: 230px;
@@ -154,6 +149,54 @@ margin: 0 auto; /*Aligne l'image automatiquement*/
     padding: 10px;
     border-radius: 15px;
 } 
+.cartesSport h1{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top:15px;
+}
+
+.Icon_Sport{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*DIV4*/
+
+.cartesSport img{
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    /* border: 1px solid black; */
+    margin-left: 16%;
+}
+.cartesSport{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    margin-top: 30px;
+}
+
+.cartedivSport{  
+    background-color: #f1a979;
+    height: 250px;
+    width: 90%;
+    box-shadow: 20px 20px 20px rgb(27, 27, 27);
+    margin : 25px;
+    border-radius: 15px;
+    /* ajout d'une bordure autour de chacune des "cartes" de 1px d'épaisseur, niveau esthétique je ne sais pas vrmt quoi en penser */
+    /* border: 1px solid black; */
+}
+
+.cartesSport p {
+    margin-top: 100px;
+    text-align: center;
+    margin: 10px;
+}
+
+/*PB d'ancre et alignement img*/
 
 :target:before{ /*Pour le pb des ancres et top bar*/
     display: block;
@@ -176,7 +219,6 @@ footer{
     height: 340px;;
     color:white;
 }
-
 
 /* POUR LOGO CLASSIQUE CARRE
 .logofooter{
