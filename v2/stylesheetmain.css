@@ -76,17 +76,16 @@ main{
 #div2 {
     /* background-color: rgb(230, 230, 230); */
     background-color: var(--grey);
-    height: 700px;
     text-align: center;
 }
 
 #div3 {
     background-color: lightblue;
-    height: 400px;
+    padding: 20px;
+    height: 300px;
 }
 #div4 {
     background-color: var(--grey);
-    height: 700px;
 }
 .logoiutdiv1 {
 height: 250px;
@@ -97,30 +96,51 @@ margin: 0 auto; /*Aligne l'image automatiquement*/
 
 /*DIV2*/
 
-.cartes img{
+.cartes1 img{
     height: 230px;
     width: 270px;
     margin: 5px;
     display: block;
-    margin-left:auto;
-    margin-right: auto;
+    margin: 0 auto;
     margin-top:20px;
     /* border: 1px solid black; */
 }
-.cartes{
+.cartes1{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: white;
-    margin-top: 30px;
+    margin: 0 auto;
 }
-.cartes h1{
+.cartes1 h1{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top:15px;
+}
+
+.cartes2 img{
+    height: 230px;
+    width: 270px;
+    margin: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-top:20px;
+    /* border: 1px solid black; */
+}
+.cartes2{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin: 0 auto;
+}
+.cartes2 h1{
     text-align: center;
     font-size: 30px;
     text-decoration: underline;
     margin-top:15px;
 }
 #div2 button{
-    background-color: var(--lorange); /* Green */
+    background-color: var(--lorange); 
     border: 2px solid black;
     color: white;
     padding: 10px 32px;
@@ -134,8 +154,8 @@ margin: 0 auto; /*Aligne l'image automatiquement*/
     background-color: #f1a979;
     height: 450px;
     width: 290px;
-    box-shadow: 20px 20px 20px rgb(27, 27, 27);
-    margin : 15px;
+    box-shadow: 20px 20px 20px rgb(0, 0, 0);
+    margin : 20px;
     border-radius: 15px;
     /* ajout d'une bordure autour de chacune des "cartes" de 1px d'épaisseur, niveau esthétique je ne sais pas vrmt quoi en penser */
     /* border: 1px solid black; */
@@ -149,21 +169,57 @@ margin: 0 auto; /*Aligne l'image automatiquement*/
     padding: 10px;
     border-radius: 15px;
 } 
-.cartesSport h1{
+
+/*DIV3*/
+
+#div3 p{
     text-align: center;
-    font-size: 30px;
-    text-decoration: underline;
-    margin-top:15px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
 }
+
+.txt_forum{
+    display: flex;
+    flex-direction: column;
+    background-color: #f1a979;
+    height: 65%;
+    box-shadow: 20px 20px 20px rgb(77, 76, 76);
+    margin : 20px;
+    border-radius: 15px;
+    /* ajout d'une bordure autour de chacune des "cartes" de 1px d'épaisseur, niveau esthétique je ne sais pas vrmt quoi en penser */
+    /* border: 1px solid black; */
+}
+
+.txt_forum a{
+    margin: 0 auto;
+    margin-top: 20px; 
+}
+
+#div3 button{
+    background-color: white; 
+    border: 2px solid black;
+    color: black;
+    padding: 10px 32px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
+/*DIV4*/
 
 .Icon_Sport{
     display: flex;
     flex-direction: row;
 }
 
-
-/*DIV4*/
-
+.cartesSport h1{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top:15px;
+}
 .cartesSport img{
     height: 40px;
     width: 40px;
@@ -184,7 +240,7 @@ margin: 0 auto; /*Aligne l'image automatiquement*/
     height: 250px;
     width: 90%;
     box-shadow: 20px 20px 20px rgb(27, 27, 27);
-    margin : 25px;
+    margin : 15px auto;
     border-radius: 15px;
     /* ajout d'une bordure autour de chacune des "cartes" de 1px d'épaisseur, niveau esthétique je ne sais pas vrmt quoi en penser */
     /* border: 1px solid black; */
