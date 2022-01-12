@@ -75,7 +75,14 @@ header{
 
 /* CONTENT  */
 
-
+.divpres{
+    height: 1050px;
+    width: 1500px;
+    background-color: var(--lgrey);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
 .main_div{
     height: 650px;
     width: 1500px;
@@ -112,6 +119,18 @@ header{
 }
 .Info_pratique_texte{
     margin: 50px 40px;
+}
+.div2_in2{
+    margin: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.div2_in2_text{
+    margin-left: 20px;
+}
+.div2_in2 img{
+    width:800px;
+    height:250px;
 }
 .div_3{
     height: 1050px;
@@ -260,4 +279,3 @@ footer a{
 footer a:hover{
     color: var(--red);
 }
-
