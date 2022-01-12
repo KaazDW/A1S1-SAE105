@@ -87,6 +87,11 @@ main{
 }
 #div4 {
     background-color: var(--grey);
+    height: 800px;
+}
+#div5{
+    background-color: lightblue;
+    height: 300px;
 }
 .logoiutdiv1 {
 display: block;
@@ -242,7 +247,7 @@ padding: 30px;
     height: 250px;
     width: 90%;
     box-shadow: 20px 20px 20px rgb(27, 27, 27);
-    margin : 15px auto;
+    margin : 25px auto;
     border-radius: 15px;
     /* ajout d'une bordure autour de chacune des "cartes" de 1px d'épaisseur, niveau esthétique je ne sais pas vrmt quoi en penser */
     /* border: 1px solid black; */
@@ -256,11 +261,11 @@ padding: 30px;
 
 /*PB d'ancre et alignement img*/
 
-:target:before{ 
+:target::before{ 
     display: block;
     content: "";
-    height: 100px;
-    margin: -100px 0 0;    
+    height: 85px;
+    margin: -85px 0 0;  
 }
 
 img{
