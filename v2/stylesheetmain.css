@@ -71,7 +71,8 @@ main{
 }
 #div1 {
     background-color: lightblue;
-    height: 400px;
+    height: 335px;
+    padding: 0;
 }
 #div2 {
     /* background-color: rgb(230, 230, 230); */
@@ -82,16 +83,15 @@ main{
 #div3 {
     background-color: lightblue;
     padding: 20px;
-    height: 300px;
+    height: 500px;
 }
 #div4 {
     background-color: var(--grey);
 }
 .logoiutdiv1 {
-height: 250px;
-width: 850px;
 display: block;
 margin: 0 auto; /*Aligne l'image automatiquement*/
+padding: 30px;
 }
 
 /*DIV2*/
@@ -152,7 +152,7 @@ margin: 0 auto; /*Aligne l'image automatiquement*/
 }
 .cartediv{  
     background-color: #f1a979;
-    height: 450px;
+    height: 400px;
     width: 290px;
     box-shadow: 20px 20px 20px rgb(0, 0, 0);
     margin : 20px;
@@ -174,19 +174,21 @@ margin: 0 auto; /*Aligne l'image automatiquement*/
 
 #div3 p{
     text-align: center;
+    font-size: large;
     width: 80%;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .txt_forum{
     display: flex;
     flex-direction: column;
     background-color: #f1a979;
-    height: 65%;
+    height: 50%;
     box-shadow: 20px 20px 20px rgb(77, 76, 76);
-    margin : 20px;
+    margin : 20px auto;
     border-radius: 15px;
+    margin-top: 60px;
     /* ajout d'une bordure autour de chacune des "cartes" de 1px d'épaisseur, niveau esthétique je ne sais pas vrmt quoi en penser */
     /* border: 1px solid black; */
 }
@@ -204,6 +206,7 @@ margin: 0 auto; /*Aligne l'image automatiquement*/
     text-align: center;
     border-radius: 10px;
     text-decoration: none;
+    margin-top: 6px;
 
 }
 
@@ -223,9 +226,8 @@ margin: 0 auto; /*Aligne l'image automatiquement*/
 .cartesSport img{
     height: 40px;
     width: 40px;
-    margin: 5px;
+    margin: 5px auto;
     /* border: 1px solid black; */
-    margin-left: 16%;
 }
 .cartesSport{
     display: flex;
@@ -254,7 +256,7 @@ margin: 0 auto; /*Aligne l'image automatiquement*/
 
 /*PB d'ancre et alignement img*/
 
-:target:before{ /*Pour le pb des ancres et top bar*/
+:target:before{ 
     display: block;
     content: "";
     height: 100px;
