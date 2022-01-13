@@ -20,6 +20,7 @@
     --middlegrey: rgb(32, 32, 32);
     /* --lgrey: rgb(97, 97, 97); */
     --lgrey: #e0b597;
+    --width: 1200px;
 
 }
 
@@ -33,9 +34,9 @@
     box-sizing: border-box;
 }
 main{
-    padding-top: 160px;
+    padding-top: 100px;
     background-color: var(--middlegrey);
-    height: 4380px;
+    height: 6080px;
 }
 
 /* HEADER */
@@ -74,18 +75,26 @@ header{
 
 
 /* CONTENT  */
-
+.divpres, .main_div, .div_2, .div_3 .div_4{
+    width: var(--width);
+}
 .divpres{
     height: 1050px;
-    width: 1500px;
+    /* width: 1300px; */
     background-color: var(--lgrey);
     border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 30px;
 }
+.divpres h1{
+    text-align: center;
+    text-shadow: 5px 5px #000;
+    font-size: 70px;
+    margin-top: 70px;
+}
 .main_div{
     height: 650px;
-    width: 1500px;
+    /* width: 1300px; */
     background-color: var(--lgrey);
     border-radius: 10px;
     margin: 0 auto;
@@ -93,7 +102,7 @@ header{
 }
 .div_2{
     height: 1050px;
-    width: 1500px;
+    /* width: 1300px; */
     background-color: var(--lgrey);
     border-radius: 10px;
     margin: 0 auto;
@@ -109,42 +118,69 @@ header{
 .div_2 h2{   
     font-weight:bold;
     padding-top: 22px;
-    font-size: xx-large;
+    font-size: 25px;
     text-decoration: underline;
-    color: black; /* color du titre*/
-
 }
 .div_2 ul{
-    font-size: 20px;
+    font-size: 16px;
 }
 .Info_pratique_texte{
     margin: 50px 40px;
 }
 .div2_in2{
-    margin: 25px;
+    margin: 0px 80px;
+
+    padding: 0px;
     display: flex;
     justify-content: space-between;
 }
 .div2_in2_text{
     margin-left: 20px;
 }
-.div2_in2 img{
-    width:800px;
-    height:250px;
+.gmaps{
+    box-shadow: 0px 0px 10px 4px rgba(29, 29, 29, 0.87);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(29, 29, 29, 0.87);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(29, 29, 29, 0.87);
 }
+.div2_in2 img{
+    width:600px;
+    height:250px;    
+    box-shadow: 0px 0px 10px 4px rgba(29, 29, 29, 0.87);
+    -moz-box-shadow: 0px 0px 10px 4px rgba(29, 29, 29, 0.87);
+    -webkit-box-shadow: 0px 0px 10px 4px rgba(29, 29, 29, 0.87);}
 .div_3{
     height: 1050px;
-    width: 1500px;
+    width: var(--width);    
     background-color: var(--lgrey);
     border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 30px;
 
 }
-body{
-    background-color: black;
+.div_4{
+    height: 520px;
+    width: var(--width);    
+    background-color: var(--lgrey);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-image: url(./img/event/fond2.jpg);
 }
-
+.div_4_in{
+    padding: 50px 4.5em;
+    max-width: 1400px;
+    min-width: 1200px;
+    padding-top: 50px;
+}
+.div_4_in img{
+    width: 100px;
+    height: 100px;
+    margin : 50px;
+}
+.div_4_img {
+    text-align: center;
+    margin: 0;
+}
 
 
 
@@ -161,12 +197,13 @@ div h1{
    font-weight:bold;
    padding-bottom: 30px;
    font-size: xx-large;
+   letter-spacing: 2px;
    color: var(--red); /* color du titre*/
  }
 .card-container {
    display: grid; /* defini l'ensemble des div realtive aux cartes comme faisant toutes partie de la même grille. Sur firefox, l'inspection d'élément permet de visualisé la grille*/
    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* auto fill permet d'aligenr automatiquement les éléments avec des min et max de défini*/
-   grid-gap: 30px; /*Assigne l'espacement entre les éléments*/
+   grid-gap: 10px; /*Assigne l'espacement entre les éléments*/
    margin: 30px 0; /*cette synthaxe défini 80px en haut et en bas et 0 a gauche et a droite*/
 }
 .card-wrapper {
@@ -252,7 +289,7 @@ div h1{
 
 
 footer{
-    background-color:var(--grey);
+    background-color:var(--middlegrey);
     text-align: center;
     align-items: center;
     height: 340px;
