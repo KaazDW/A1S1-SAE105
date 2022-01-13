@@ -19,8 +19,8 @@
     --darkgrey: rgb(14, 14, 14);
     --middlegrey: rgb(32, 32, 32);
     /* --lgrey: rgb(97, 97, 97); */
-    --lgrey: #e0b597;
-    --width: 1200px;
+    --lgrey: #ffc198;
+    --width: 1100px;
 
 }
 
@@ -93,12 +93,14 @@ header{
     margin-top: 70px;
 }
 .main_div{
-    height: 650px;
+    height: 850px;
     /* width: 1300px; */
     background-color: var(--lgrey);
     border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 30px;
+    background-image: url(./img/event/fond.jpg);
+    
 }
 .div_2{
     height: 1050px;
@@ -203,8 +205,8 @@ div h1{
 .card-container {
    display: grid; /* defini l'ensemble des div realtive aux cartes comme faisant toutes partie de la même grille. Sur firefox, l'inspection d'élément permet de visualisé la grille*/
    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* auto fill permet d'aligenr automatiquement les éléments avec des min et max de défini*/
-   grid-gap: 10px; /*Assigne l'espacement entre les éléments*/
-   margin: 30px 0; /*cette synthaxe défini 80px en haut et en bas et 0 a gauche et a droite*/
+   grid-gap: 15px; /*Assigne l'espacement entre les éléments*/
+   /* margin: 30px 0; cette synthaxe défini 80px en haut et en bas et 0 a gauche et a droite */
 }
 .card-wrapper {
    position: relative;
@@ -231,7 +233,7 @@ div h1{
    position: absolute;
    height: 100%;
    width: 100%;
-   padding: 40px;
+   padding: 20px 40px;
    border-radius: 18px;
    backface-visibility: hidden;
    -webkit-backface-visibility: hidden;
@@ -245,12 +247,11 @@ div h1{
 }
   
 .card-front p {
-   font-size: 20px;
-   line-height: 35px;
+   font-size: 25px;
+   text-decoration: underline;
+   /* line-height: 0px; */
 }
-.card-price  {
-  font-size: 45px;
-}
+
   
 .card-back {
    background: var(--bgcarte);
@@ -270,13 +271,10 @@ div h1{
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    font-weight: normal;
     background-color: #fff;
     font-size: 14px;
     color: #333;
-    transition: 
-    background-color 0.3s ease-out,
-    color 0.3s ease-out;
+    transition: background-color 0.3s ease-out,color 0.3s ease-out;
 }
   
 .card-back a:hover { 
