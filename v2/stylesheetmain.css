@@ -10,9 +10,6 @@
 
 /* INIT COLOR VARIABLE */
 
-@media screen and (min-width: 800px) {
-    
-}
 
 :root{
     --grey: #333333;  
@@ -20,6 +17,7 @@
     --red:#fa4f09;
     /* --darkgrey: rgb(34, 34, 34); */
     --darkgrey: rgb(14, 14, 14);
+    --width: 690px;
 }
 
 /* INIT GLOBAL SETTINGS */
@@ -78,25 +76,38 @@ main{
     background-color: lightblue;
     height: 335px;
     padding: 0;
+    width: var(--width);
+    margin: 0 auto;
 }
 #div2 {
     /* background-color: rgb(230, 230, 230); */
     background-color: var(--grey);
     text-align: center;
+    width: var(--width);
+    margin: 0 auto;
+    height: 1065px;
 }
 
 #div3 {
     background-color: lightblue;
-    padding: 20px;
     height: 500px;
+    width: var(--width);
+    margin: 0 auto;
+
 }
 #div4 {
     background-color: var(--grey);
     height: 800px;
+    width: var(--width);
+    margin: 0 auto;
+
 }
 #div5{
     background-color: lightblue;
-    height: 450px;
+    height: 415px;
+    width: var(--width);
+    margin: 0 auto;
+
 }
 .logoiutdiv1 {
 display: block;
@@ -186,7 +197,7 @@ padding: 30px;
 
 #div3 p{
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1em;
     width: 80%;
     margin: 0 auto;
     margin-top: 40px;
@@ -201,6 +212,7 @@ padding: 30px;
     margin : 20px auto;
     border-radius: 15px;
     margin-top: 60px;
+    width: 90%;
     /* ajout d'une bordure autour de chacune des "cartes" de 1px d'épaisseur, niveau esthétique je ne sais pas vrmt quoi en penser */
     /* border: 1px solid black; */
 }
@@ -262,7 +274,7 @@ padding: 30px;
 
 .cartesSport p {
     margin-top: 100px;
-    font-size: 1.2vw;
+    font-size: 1em;
     text-align: center;
     margin: 10px;
 }
@@ -276,13 +288,14 @@ padding: 30px;
 .partenaire h2 {
     text-align: center;
     margin-top: 10px;
+    font-size: 1.2em;
 }
 
 .partenairediv{
     display: flex;
     flex-direction: column;
     background-color: #f1a979;
-    height: 225px;
+    height: 175px;
     width: 200px;
     box-shadow: 20px 20px 20px rgb(0, 0, 0);
     margin : 20px;
@@ -324,6 +337,7 @@ footer{
     align-items: center;
     height: 340px;;
     color:white;
+    margin: 0 auto;
 }
 
 /* POUR LOGO CLASSIQUE CARRE
