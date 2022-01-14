@@ -111,6 +111,11 @@ header{
     background-image: url(./img/event/fond.jpg);
     
 }
+
+.main_div li{
+    font-size:0.87em;
+}
+
 .div_2{
     height: 1050px;
     /* width: 1300px; */
