@@ -10,6 +10,11 @@
 
 /* INIT COLOR VARIABLE */
 
+/* {
+    user-select: none; Permet d'empécher de selctionner avec le curseur ;
+} */
+
+
 :root{
     --grey: #333333;  
     --lorange: #f1a979;    
@@ -23,7 +28,10 @@
     --width: 1100px;
 
 }
-
+::selection { /*Permet de changer la couleur lors du surlignage du texte*/
+    color: #ececec;
+    background: #222831;
+}
 /* INIT GLOBAL SETTINGS */
 
 *{
@@ -55,6 +63,7 @@ header{
     padding: 12px;
     margin: 0;
     font-size: 35px;
+    text-shadow: 0.5px 1.5px white;
 }
 .headernavbar{
     text-decoration: none;
@@ -141,15 +150,12 @@ header{
 }
 .gmaps{
     box-shadow: 0px 0px 10px 4px rgba(29, 29, 29, 0.87);
-    -moz-box-shadow: 0px 0px 10px 4px rgba(29, 29, 29, 0.87);
-    -webkit-box-shadow: 0px 0px 10px 4px rgba(29, 29, 29, 0.87);
 }
 .div2_in2 img{
     width:600px;
     height:250px;    
     box-shadow: 0px 0px 10px 4px rgba(29, 29, 29, 0.87);
-    -moz-box-shadow: 0px 0px 10px 4px rgba(29, 29, 29, 0.87);
-    -webkit-box-shadow: 0px 0px 10px 4px rgba(29, 29, 29, 0.87);}
+}
 .div_3{
     height: 1050px;
     width: var(--width);    
@@ -157,7 +163,6 @@ header{
     border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 30px;
-
 }
 .div_4{
     height: 520px;
@@ -187,7 +192,7 @@ header{
 
 
 
-/*CSS pour la grilles de carte en perspective de la maindiv*/
+/*CSS pour la grilles de carte en perspective présentes dans maindiv*/
 
 .container {
     width: 90%;
