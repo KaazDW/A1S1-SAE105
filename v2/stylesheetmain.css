@@ -311,8 +311,13 @@ padding: 30px;
 }
 
 #sfen{
-    margin-top: 20px;
+    margin-top: 10px;
 }
+
+#cern{
+    margin-top:-10px;
+}
+
 
 /*PB d'ancre et alignement img*/
 
