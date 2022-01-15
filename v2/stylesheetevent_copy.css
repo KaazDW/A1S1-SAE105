@@ -225,7 +225,7 @@ margin: 0 auto;
 }
 .formulaire{
     text-align: center;
-    margin: 0 auto;
+    margin: 50px 45%;
     display: inline-block;
     background-color: var(--lorange);
     border-radius: 10px;
@@ -236,7 +236,6 @@ margin: 0 auto;
     width: 200px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
 }
 .date{
     color: var(--red)
