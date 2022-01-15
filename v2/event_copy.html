@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8"> 
     <title>FPB Bourg-en-Bresse</title>
-    <link rel="stylesheet" href="stylesheetevent.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/league-of-legends-computer-icons-ongamenet-starleague-video-game-electronic-sports-voice-actor-e2215679f999d279ae207bc8993804c1.png"> <!-- Icone de la fenetre dans la barre d'onglet-->
-    <!-- ASTUCE : fais CTRL + : ou / pour mettre toute la ligne en commentaire c bcp plus facile et ca fonctionne aussi dans le css file-->
-    <!-- AUTRE ASTUCE : fait clique droit sur l'onglet de ton fichier, puis factionner a droite ou bas, ca te permet de splitscreen tes fichiers, avoir en parallele d'afficher ton css et ton html, j'utilise ca depuis un bail mais au cas ou tu connais pas ou j'oublie de t'en parler ta ca la -->
-
+    <link rel="stylesheet" href="stylesheetevent_copy.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img.png">
 </head>
 <body>
-    <header>
-        <div class="topheader">
+    <header id="header">
+      <div id="hautdepage"><a href="#header">︿</a></div>
+
+        <div id="topheader">
             <h1>IUT Claude Bernard Lyon1</h1>
         </div>
         <div class="headernavbar">
             <a href="index.html">UCBL</a>
-            <a href="#div2">Nos Intervenants</a>
-            <a href="#div4">Element n°2</a> <!-- Soit on laisse evenement soit on met Le forum directement ? -->
+            <a href="#main_div">Nos Intervenants</a>
+            <a href="#div_2">Infos Pratiques</a>
             <a href="#div5">Element n°3</a> 
-            <a href="#div6">Element n°4</a>
-            <a href="#div7">Element n°5</a>
         </div>
     </header>
     <main>
-        <div id="divpres">
-          <h1>FPB Bourg-en-Bresse</h1>
-        </div>
+      <div style="border-top: 2px solid white; margin: 0 auto; margin-top: 100px; width: 90%;"></div>
+      <div id="divpres">
+        <h1>Forum Poursuite d'Études <br/>Bourg-en-Bresse</h1>
+      </div>
+      <div style="border-top: 2px solid white; margin: 0 auto; width: 90%;"></div>
+
         <div id="main_div">
             <div class="container">
                 <h1>Nos Intervenants :</h1>
@@ -36,7 +36,7 @@
                     <div class="card">
                       <div class="card-front">
                         <p>IUT Claude Bernard Lyon 1</p>
-                        <ul>
+                        <ul class="ul_1">
                           <li>BUT Informatique</li>
                           <li>BUT GEA</li>
                           <li>BUT GTE</li>
@@ -54,7 +54,7 @@
                     <div class="card">
                       <div class="card-front">
                         <p>IUT Lumière Lyon 2</p>
-                        <ul>
+                        <ul class="ul_spe">
                           <li>BUT GESTION DES ENTREPRISES ET DES ADMINISTRATIONS</li>
                           <li>BUT GESTION DES ENTREPRISES ET DES ADMINISTRATIONS</li>
                           <li>BUT MANAGEMENT DE LA LOGISTIQUE ET DES TRANSPORTS</li>
@@ -73,7 +73,7 @@
                     <div class="card">
                       <div class="card-front">
                         <p>IUT Jean Moulin Lyon 3</p>
-                        <ul>
+                        <ul class="ul_1">
                           <li>BUT Information Communication</li>
                           <li>BUT Carrières Juridiques - Métiers du Droit et de l'Entreprise</li>
                           <li>BUT Gestion Administrative et Commerciale des Organisations</li>
@@ -84,15 +84,13 @@
                         <a href="#" class="btn">Plus d'informations</a>
                       </div>
                     </div>
-                  </div>
-          
-                  
+                  </div>               
           
                   <div class="card-wrapper">
                     <div class="card">
                       <div class="card-front">
                         <p>INSA Lyon</p>
-                        <ul>
+                        <ul class="ul_1">
                           <li>Formation Initiale aux Métiers d'Ingénieur</li>
                           <li>Formation Ingénieur Second Cycle</li>
                           <li>Master Recherche</li>
@@ -110,7 +108,7 @@
                     <div class="card">
                       <div class="card-front">
                         <p>ISG Lyon</p>
-                        <ul>
+                        <ul class="ul_1">
                           <li>Master of Business Administration</li>
                           <li>Doubles diplômes internationaux  </li>
                         </ul>
@@ -126,7 +124,7 @@
                     <div class="card">
                       <div class="card-front">
                         <p>IRI Lyon</p>
-                        <ul>
+                        <ul class="ul_1">
                           <li>Licence Pro des réseaux informatiques et des télécommunications </li>
                           <li>Licence Pro conception de métier industriel</li>
                           <li>Licence Pro commercialisation de produits et services</li>
@@ -147,12 +145,12 @@
             <div class="div2_in">
             <div>
                 <h1>Infos Pratiques</h1>
-                <iframe class="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22089.605333996402!2d5.2247851999999995!3d46.206463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f352331dd6ea89%3A0x7b1bbcd7e79a2d6b!2sSalle%20Des%20F%C3%A9tes!5e0!3m2!1sfr!2sfr!4v1642069907089!5m2!1sfr!2sfr" width="650" height="250" style="border:0;" allowfullscreen="" loading="lazy" style="box-shadow: rgba(29, 29, 29, 0.87) 15px 15px 15px;"></iframe>
+                <iframe class="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22089.605333996402!2d5.2247851999999995!3d46.206463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f352331dd6ea89%3A0x7b1bbcd7e79a2d6b!2sSalle%20Des%20F%C3%A9tes!5e0!3m2!1sfr!2sfr!4v1642069907089!5m2!1sfr!2sfr" width="650" height="250" style="border:0;" allowfullscreen="" loading="lazy""></iframe>
             </div>
             <div class="Info_pratique_texte">
                 <h2>Salle des fêtes :</h2>
                 <ul>
-                    <li>Esplanade de la Comdédie</li>
+                    <li>Esplanade de la Comédie</li>
                     <li>01000 Bourg-en-Bresse</li>
                     <li>Accessible via n'importe quel Bus :</br>
                         >>> Arrêt <i>'Carré Amiot'</i> puis 5 minutes à pied </li>
@@ -188,7 +186,7 @@
           </div>
         </div>
         <div id="div_3">
-            
+            <h1>Participer à l'évenement</h1>
         </div>
         
 
