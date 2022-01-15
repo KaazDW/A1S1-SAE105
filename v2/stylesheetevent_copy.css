@@ -17,7 +17,8 @@
     --grey: #333333;  
     --lorange: #f1a979;    
     --red:#ff672b;
-    --bgcarte: rgb(29, 104, 117);
+    /* --bgcarte: rgb(17, 72, 83); */
+    --bgcarte: rgb(34, 56, 77);
     /* --darkgrey: rgb(34, 34, 34); */
     --darkgrey: rgb(14, 14, 14);
     --middlegrey: rgb(32, 32, 32);
@@ -123,7 +124,7 @@ header{
     margin-top: 150px;
     margin-bottom: 30px;
     background-image: url(./img/event/fond.jpg);
-    
+    /* background-color: var(--lorange); */
 }
 
 #main_div li{
@@ -185,7 +186,10 @@ header{
     margin: 0 auto;
     margin-bottom: 30px;
     margin-top: 70px;
-
+    color: white;
+}
+#div_3 p{
+    text-align: center;
 }
 #div_4{
     height: 370px;
@@ -211,8 +215,23 @@ header{
     text-align: center;
     margin: 0;
 }
-
-
+.button{
+    margin: 0 auto;
+    display: inline-block;
+    background-color: var(--lorange);
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: black;
+    font-size: 19px;
+    padding: 14px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.button :hover {
+    background-color: green;
+    }
 
 
 /*CSS pour la grilles de carte en perspective présentes dans maindiv*/

@@ -20,24 +20,14 @@
         <div class="main_div">
                
             <form method="post">
-                <div class="title">
-                    <h2>Formulaire d'inscription</h2>
-                </div>
+                <h2>Formulaire d'inscription</h2>
                 <div class="form">
                     <div class="input_field">
                         <label>Prénom</label>
                         <input type="text" class="input">
                     </div>
                     <div class="input_field">
-                        <label>Nom de famille</label>
-                        <input type="text" class="input">
-                    </div>
-                    <div class="input_field">
-                        <label>Âge</label>
-                        <input type="text" class="input">
-                    </div>
-                    <div class="input_field">
-                        <label>Atelier</label>
+                        <label>Nom</label>
                         <input type="text" class="input">
                     </div>
                     <div class="input_field">
@@ -53,8 +43,31 @@
                         <textarea class="textarea"></textarea>
                     </div>
                     <div class="input_field">
-                        <label>Code postal</label>
-                        <input type="text" class="input">
+                        <label>Contenu de votre message</label>
+                        <textarea class="textarea"></textarea>
+                    </div>
+                    <p>Vous êtes :</p>
+                    <div class="input_field">
+                        <label class="check">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p>une École Supérieur</p>
+                        <label class="check">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p>un Lycée</p>
+                        <label class="check">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p>un Particulier</p>
+                        <label class="check">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p>une Entreprise</p>
                     </div>
                     <div class="input_field terms">
                         <label class="check">
@@ -63,7 +76,7 @@
                         </label>
                         <p>J'accepte les conditions d'utilisation</p>
                     </div>
-                    <div class="input_field">
+                    <div class="input_field" id="inscription">
                         <input type="submit" value="Inscription" class="btn">
                     </div>
                 </div>

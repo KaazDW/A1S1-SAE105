@@ -1,14 +1,12 @@
-/* FONT INIT */
 
-/* @import url comme ici permet d'importer une police depuis google 'fonts.google.com' j'ai trouvé ça plus simple que de devoir dl les fichiers 1 par 1*/
+/* FONT INIT */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,400&family=Poppins:wght@100;300;400;500;600&display=swap');
 
-/* les lignes qui suivent vont permettre d'utiliser les polices que j'ai importer, j'en ai importer que deux pour l'instant */
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Poppins', sans-serif; */
 
-/* INIT COLOR VARIABLE */
 
+/* INIT COLOR VARIABLE */
 :root{
     --grey: #333333;  
     --lorange: #f1a979;    
@@ -22,8 +20,8 @@
 
 }
 
-/* INIT GLOBAL SETTINGS */
 
+/* INIT GLOBAL SETTINGS */
 *{
     font-family: 'Poppins', sans-serif;
     margin:0;
@@ -34,13 +32,12 @@
 main{
     padding-top: 160px;
     background-color: var(--middlegrey);
-    height: 810px;
+    height: 910px;
 }
 
 
 
 /* HEADER */
-
 header{
     padding-top: 20px;
     position:absolute;
@@ -75,10 +72,9 @@ header{
 
 
 /* CONTENT  */
-
 .main_div{
-    height: 500px;
-    width: 1500px;
+    height: 630px;
+    width: 50%;
     background-color: var(--lgrey);
     border-radius: 10px;
     margin: 0 auto;
@@ -100,26 +96,27 @@ label.check{
     width:20px;
 }
 
-.title h2{
+.main_div h2{
     text-align: center;
-    margin-top: 30px;
+    padding: 30px;
 }
 
 .form{
     display: table;
     margin: auto;
 }
+#inscription{
+    padding: 15px;
+    text-align: center;
+}
 
 /* FOOTER */
-
-
 footer{
-    background-color:var(--grey);
+    background-color:var(--middlegrey);
     text-align: center;
     align-items: center;
     height: 340px;
     color:white;
-
 }
 .logofooter{
     height: 100px;
