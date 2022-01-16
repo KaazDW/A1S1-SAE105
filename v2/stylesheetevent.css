@@ -1,36 +1,35 @@
 
 /* FONT INIT */
-
-/* @import url comme ici permet d'importer une police depuis google 'fonts.google.com' j'ai trouvé ça plus simple que de devoir dl les fichiers 1 par 1*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,400&family=Poppins:wght@100;300;400;500;600&display=swap');
-
-/* les lignes qui suivent vont permettre d'utiliser les polices que j'ai importer, j'en ai importer que deux pour l'instant */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Paytone+One&family=Russo+One&family=Viga&display=swap');
 /* font-family: 'Montserrat', sans-serif; */
 /* font-family: 'Poppins', sans-serif; */
-
-/* INIT COLOR VARIABLE */
 
 /* {
     user-select: none; Permet d'empécher de selctionner avec le curseur ;
 } */
 
 
+
+/* INIT COLOR VARIABLE */
+
 :root{
     --grey: #333333;  
     --lorange: #f1a979;    
-    --red:#fa4f09;
-    --bgcarte: rgb(29, 104, 117);
+    --red:#ff672b;
+    /* --bgcarte: rgb(17, 72, 83); */
+    --bgcarte: rgb(34, 56, 77);
     /* --darkgrey: rgb(34, 34, 34); */
     --darkgrey: rgb(14, 14, 14);
     --middlegrey: rgb(32, 32, 32);
     /* --lgrey: rgb(97, 97, 97); */
     --lgrey: #ffc198;
-    --width: 1100px;
+    --width: 90%;
 
 }
 ::selection { /*Permet de changer la couleur lors du surlignage du texte*/
-    color: #ececec;
-    background: #222831;
+    color: #000000;
+    background: #93beff;
 }
 /* INIT GLOBAL SETTINGS */
 
@@ -38,32 +37,42 @@
     font-family: 'Poppins', sans-serif;
     margin:0;
     padding:0;
-    transition: all .2s linear;
+    transition: all .3s linear;
     box-sizing: border-box;
 }
 main{
     padding-top: 100px;
     background-color: var(--middlegrey);
-    height: 6080px;
+    height: 3180px;
 }
 
 /* HEADER */
+#hautdepage{
+    width: 100%;
+    position: fixed;
+    text-align: center;
 
+}
+#hautdepage a{
+    text-decoration: none;
+    color: white;
+}
 header{
     padding-top: 20px;
     position:absolute;
     width: 100%;
 }
-.topheader{
+#topheader{
     /* background-color: var(--darkgrey); */
-    color: white;
+    color: rgb(141, 105, 105);
     text-align: center;
+    padding-top: 20px;
 }
-.topheader h1{
+#topheader h1{
     padding: 12px;
     margin: 0;
     font-size: 35px;
-    text-shadow: 0.5px 1.5px white;
+    /* text-shadow: 0px 3px rgb(195, 195, 195); */
 }
 .headernavbar{
     text-decoration: none;
@@ -74,11 +83,12 @@ header{
 }
 .headernavbar a{
     text-decoration: none;
-    color: var(--lorange);
+    color: rgb(255, 187, 175);
     margin-left: 15px;
+    padding: 10px;
 }
 .headernavbar a:hover{
-    color: var(--red);
+    color: white;
 }
 
 
@@ -88,27 +98,36 @@ header{
     width: var(--width);
 }
 #divpres{
-    height: 1050px;
-    /* width: 1300px; */
+    height: 400px;
     border-radius: 10px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    margin: -60px auto;
 }
 #divpres h1{
     text-align: center;
-    text-shadow: 5px 5px #000;
-    font-size: 70px;
-    margin-top: 70px;
+    text-shadow: 2px 2px rgb(182, 182, 182);
+    font-size: 55px;
+    border-radius: 25px;
+    color: var(--red);
+    margin: 120px;
+    padding : 50px;
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 6px;
+    border: 5px dashed white;
+    user-select: none;
 }
+
+img.logofpe {
+    margin: -50px 35%;
+}
+
 #main_div{
-    height: 850px;
-    /* width: 1300px; */
-    background-color: var(--lgrey);
+    height: 50em;
     border-radius: 10px;
     margin: 0 auto;
+    margin-top: 150px;
     margin-bottom: 30px;
     background-image: url(./img/event/fond.jpg);
-    
+    /* background-color: var(--lorange); */
 }
 
 #main_div li{
@@ -116,12 +135,10 @@ header{
 }
 
 #div_2{
-    height: 1050px;
-    /* width: 1300px; */
-    background-color: var(--lgrey);
-    border-radius: 10px;
+    height: 750px;
     margin: 0 auto;
     margin-bottom: 30px;
+    color: white;
 }
  .div2_in{
     padding: 50px 4.5em;
@@ -137,10 +154,13 @@ header{
     text-decoration: underline;
 }
 #div_2 ul{
-    font-size: 16px;
+    font-size: 18px;
 }
 .Info_pratique_texte{
-    margin: 50px 40px;
+    margin: 50px 70px;
+}
+.Info_pratique_texte ul{
+    margin-top: 50px;
 }
 .div2_in2{
     margin: 0px 80px;
@@ -150,28 +170,33 @@ header{
     justify-content: space-between;
 }
 .div2_in2_text{
-    margin-left: 20px;
+    margin-left: 480px;
 }
 .gmaps{
-    box-shadow: 0px 0px 10px 4px rgba(29, 29, 29, 0.87);
+    box-shadow: 0px 0px 10px 4px rgba(182, 182, 182, 0.87);
+    border-radius: 5px;
 }
 .div2_in2 img{
+    border-radius: 5px;
     width:600px;
     height:250px;    
-    box-shadow: 0px 0px 10px 4px rgba(29, 29, 29, 0.87);
+    box-shadow: 0px 0px 10px 4px rgba(182, 182, 182, 0.87);
 }
 #div_3{
-    height: 1050px;
+    height: 150px;
     width: var(--width);    
-    background-color: var(--lgrey);
-    border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 30px;
+    margin-top: 100px;
+    color: white;
+}
+#div_3 p{
+    margin-top: 50px;
+    text-align: center;
 }
 #div_4{
-    height: 520px;
+    height: 370px;
     width: var(--width);    
-    background-color: var(--lgrey);
     border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -179,20 +204,41 @@ header{
 }
 .div_4_in{
     padding: 50px 4.5em;
-    max-width: 1400px;
     min-width: 1200px;
     padding-top: 50px;
+
 }
 .div_4_in img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
     margin : 50px;
 }
 .div_4_img {
     text-align: center;
     margin: 0;
 }
-
+#div_2 ul{
+    list-style-type: none;
+}
+.div_a_formulaire{
+margin: 0 auto;
+}
+.formulaire{
+    text-align: center;
+    margin: 50px 45%;
+    display: inline-block;
+    background-color: var(--lorange);
+    border-radius: 10px;
+    color: black;
+    font-size: 19px;
+    padding: 014px;
+    width: 200px;
+    cursor: pointer;
+}
+.date{
+    color: var(--red)
+}
 
 
 
@@ -214,12 +260,12 @@ div h1{
 .card-container {
    display: grid; /* defini l'ensemble des div realtive aux cartes comme faisant toutes partie de la même grille. Sur firefox, l'inspection d'élément permet de visualisé la grille*/
    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* auto fill permet d'aligenr automatiquement les éléments avec des min et max de défini*/
-   grid-gap: 15px; /*Assigne l'espacement entre les éléments*/
+   grid-gap: 25px; /*Assigne l'espacement entre les éléments*/
    /* margin: 30px 0; cette synthaxe défini 80px en haut et en bas et 0 a gauche et a droite */
 }
 .card-wrapper {
    position: relative;
-   min-height: 200px;
+   height: 300px;
    perspective: 2000px; /*Permet de créer une perspective fictive d'une profondeur de 2000px*/
    perspective-origin: top; 
 }
@@ -227,7 +273,7 @@ div h1{
 .card-wrapper:hover .card {
    transform: rotateY(180deg); /*CSS de mise en place de l'animation d'une rotation sur l'axe Y de 180deg*/
 }
-  
+
 .card { /*CSS de la carte en elle meme*/
    position: relative;
    height: 100%;
@@ -245,7 +291,6 @@ div h1{
    padding: 20px 40px;
    border-radius: 18px;
    backface-visibility: hidden;
-   -webkit-backface-visibility: hidden;
 }
   
 .card-front {
@@ -258,10 +303,13 @@ div h1{
 .card-front p {
    font-size: 25px;
    text-decoration: underline;
-   /* line-height: 0px; */
 }
-
-  
+.ul_1{
+    font-size: 22px;
+}
+.ul_spe{
+    font-size: 17px;
+}
 .card-back {
    background: var(--bgcarte);
    transform: rotateY(180deg);
@@ -281,9 +329,9 @@ div h1{
     text-transform: uppercase;
     letter-spacing: 1.5px;
     background-color: #fff;
-    font-size: 14px;
+    font-size: 15px;
     color: #333;
-    transition: background-color 0.3s ease-out,color 0.3s ease-out;
+    transition: 0.3s ease-out,color 0.3s ease-out;
 }
   
 .card-back a:hover { 
@@ -292,9 +340,10 @@ div h1{
 }
 
 
+
+
+
 /* FOOTER */
-
-
 footer{
     background-color:var(--middlegrey);
     text-align: center;
@@ -323,3 +372,13 @@ footer a{
 footer a:hover{
     color: var(--red);
 }
+
+/* @media queries (max-width: 1000px)
+{
+#main_div{
+    height: 1000px;
+}
+h1{
+    color: green;
+}
+} */

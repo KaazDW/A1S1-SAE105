@@ -4,10 +4,7 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>IUT Lyon 1 Claude Bérnard</title>
-    <link rel="stylesheet" href="stylesheetmain.css">
-    <!-- ASTUCE : fais CTRL + : ou / pour mettre toute la ligne en commentaire c bcp plus facile et ca fonctionne aussi dans le css file-->
-    <!-- AUTRE ASTUCE : fait clique droit sur l'onglet de ton fichier, puis factionner a droite ou bas, ca te permet de splitscreen tes fichiers, avoir en parallele d'afficher ton css et ton html, j'utilise ca depuis un bail mais au cas ou tu connais pas ou j'oublie de t'en parler ta ca la -->
-
+    <link rel="stylesheet" href="stylesheetindex.css">
 </head>
 <body>
     <header>
@@ -15,22 +12,17 @@
             <h1>IUT Claude Bernard Lyon 1</h1>
         </div>
         <div class="headernavbar">
-            <a href="#div1" id="ancre">HOME</a>
-            <a href="#div2" id="ancre">Nos Formations</a>
-            <a href="#div3" id="ancre">Événement</a> <!-- Soit on laisse evenement soit on met Le forum directement ? -->
-            <a href="#div4" id="ancre">Associations Sportives/Culturelles</a> 
-            <a href="#div5" id="ancre">Partenariat</a>
-            <!-- <a href="#div6">À propos</a> -->
+            <a href="#div1">HOME</a>
+            <a href="#div2">Nos Formations</a>
+            <a href="#div3">Événement</a>
+            <a href="#div4">Associations Sportives/Culturelles</a> 
+            <a href="#div5">Partenariat</a>
         </div>
     </header>
     <main>
-        <!-- DIV 1  -->
-
         <div id="div1">
             <img class="logoiutdiv1" src="img/logoucbl_test.png" alt="logo_iut">
         </div>
-
-        <!-- DIV 2-->
 
         <div id="div2">
             <h1 style="color: white; text-align:center; padding-top: 25px; margin-bottom: 20px;">Nos Formations BUT :</h1>
@@ -39,31 +31,25 @@
                 <div class="cartediv">
                     <h1>INFORMATIQUE</h1>
                     <img src="img/info-carre.jpg" alt="image de la formation">
-                    <a href="https://www.univ-lyon1.fr/" target="blank"><button>➜ voir plus</button></a>
-                    <!-- <details><summary>voir plus</summary><p>Alors le BUT infortmsdfjksndf balbalbal </p></details> -->
+                    <br><a href="https://www.univ-lyon1.fr/" class="button" target="blank">➜ voir plus</a>
                 </div>
-
                 <div class="cartediv">
                     <h1>GTE</h1>
                     <img src="img/gte-carre.jpg" alt="image de la formation">
-                    <a href="https://www.univ-lyon1.fr/" target="blank"><button>➜ voir plus</button></a>
-                    <!-- <details><summary>voir plus</summary><p>Alors le BUT infortmsdfjksndf balbalbal </p></details> -->
-
+                    <br><a href="https://www.univ-lyon1.fr/" class="button" target="blank">➜ voir plus</a>
                 </div>
             </div>
             <div class="cartes2">
                 <div class="cartediv">
                     <h1>GEA</h1>
-                    <img src="img/GEA.jpg" href="https://www.univ-lyon1.fr/" alt="image de la formation">
-                    <a href="https://www.univ-lyon1.fr/" target="blank"><button>➜ voir plus</button></a>
-                    <!-- <details><summary>voir plus</summary><p>Alors le BUT infortmsdfjksndf balbalbal </p></details> -->
+                    <a href="https://www.univ-lyon1.fr/"><img src="img/GEA.jpg" alt="image de la formation"></a>
+                    <br><a href="https://www.univ-lyon1.fr/" class="button" target="blank">➜ voir plus</a>
                 </div>
 
                 <div class="cartediv">
                     <h1>BIO</h1>     
                     <img src="img/bio-carre.jpg" alt="image de la formation">
-                    <a href="https://www.univ-lyon1.fr/" target="blank"><button>➜ voir plus</button></a>
-                    <!-- <details><summary>voir plus</summary><p>Alors le BUT infortmsdfjksndf balbalbal </p></details> -->
+                    <br><a href="https://www.univ-lyon1.fr/" class="button" target="blank">➜ voir plus</a>
                 </div>
             </div>
 
@@ -79,7 +65,7 @@
                     Le FPE est un forum axé sur l'informatique, animé par des entreprises et écoles spécialisées dans ce milieu.
                     Celui-ci se déroule à la salle des fête de la mairie de Bourg-en-Bresse, encadré par l'I.U.T Lyon 1 de Bourg-en-Bresse et son BDE.
                 </p>
-                <a href="event_copy.html" target="blank"><button>➜ voir plus</button></a>
+                <a href="event.html" class="button" target="blank">➜ voir plus</a>
             </div>
         </div>    
 
@@ -91,10 +77,10 @@
                 <div class="cartedivSport">
                     <h1>Sport</h1>
                     <div class="Icon_Sport">
-                        <img src="img/Icon Sport et culture/badminton.png" alt="Badminton">
-                        <img src="img/Icon Sport et culture/balle-de-tennis.png" alt="Tennis">
-                        <img src="img/Icon Sport et culture/basketball.png" alt="Basketball">
-                        <img src="img/Icon Sport et culture/variante-de-ballon-de-football.png" alt="Football">
+                        <img src="img/IconSportetculture/badminton.png" alt="Badminton">
+                        <img src="img/IconSportetculture/balle-de-tennis.png" alt="Tennis">
+                        <img src="img/IconSportetculture/basketball.png" alt="Basketball">
+                        <img src="img/IconSportetculture/variante-de-ballon-de-football.png" alt="Football">
                     </div>
                     <p>
                         Le sport à l'I.U.T est un excellent moyen pour les élèves de se changer les idées et de s'entretenir
@@ -107,10 +93,10 @@
                 <div class="cartedivSport">
                     <h1>Culture</h1>
                     <div class="Icon_Sport">
-                        <img src="img/Icon Sport et culture/masques-de-theatre.png" alt="Theatre">
-                        <img src="img/Icon Sport et culture/note-de-musique.png" alt="Musique">
-                        <img src="img/Icon Sport et culture/projecteur-de-cinema.png" alt="Cinema">
-                        <img src="img/Icon Sport et culture/art.png" alt="Art">
+                        <img src="img/IconSportetculture/masques-de-theatre.png" alt="Theatre">
+                        <img src="img/IconSportetculture/note-de-musique.png" alt="Musique">
+                        <img src="img/IconSportetculture/projecteur-de-cinema.png" alt="Cinema">
+                        <img src="img/IconSportetculture/art.png" alt="Art">
                     </div>
                     <p>
                         Notre établissement permet aux étudiants une large ouverture culturelle, 
@@ -151,7 +137,7 @@
     </main>
     <footer>
         <img class="logofooter" src="img/logoucbl_test.png" alt="img">
-        <p class="allrightreserved">© Tous droits reservés - <a class="liens_ucbl_footer" href="https://www.univ-lyon1.fr/" traget="_blank">Université Claude Bernard Lyon1 </a></p>
+        <p class="allrightreserved">© Tous droits reservés - <a class="liens_ucbl_footer" href="https://www.univ-lyon1.fr/" target="_blank">Université Claude Bernard Lyon1 </a></p>
      <div>
         <a href="https://www.facebook.fr" target="_blank"><img class="footerimg" src="img/logofb.png" alt="img"></a>
         <a href="https://www.instagram.com" target="_blank"><img class="footerimg" src="img/logoinsta.png" alt="img"></a>

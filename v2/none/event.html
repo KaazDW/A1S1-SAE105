@@ -3,31 +3,30 @@
 <head>
     <meta charset="UTF-8"> 
     <title>FPB Bourg-en-Bresse</title>
-    <link rel="stylesheet" href="stylesheetevent_copy.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/event/triangle.png">
+    <link rel="stylesheet" href="stylesheetevent.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/league-of-legends-computer-icons-ongamenet-starleague-video-game-electronic-sports-voice-actor-e2215679f999d279ae207bc8993804c1.png"> <!-- Icone de la fenetre dans la barre d'onglet-->
+    <!-- ASTUCE : fais CTRL + : ou / pour mettre toute la ligne en commentaire c bcp plus facile et ca fonctionne aussi dans le css file-->
+    <!-- AUTRE ASTUCE : fait clique droit sur l'onglet de ton fichier, puis factionner a droite ou bas, ca te permet de splitscreen tes fichiers, avoir en parallele d'afficher ton css et ton html, j'utilise ca depuis un bail mais au cas ou tu connais pas ou j'oublie de t'en parler ta ca la -->
+
 </head>
 <body>
-    <header id="header">
-      <div id="hautdepage"><a href="#header">︿</a></div>
-
-        <div id="topheader">
+    <header>
+        <div class="topheader">
             <h1>IUT Claude Bernard Lyon1</h1>
         </div>
         <div class="headernavbar">
             <a href="index.html">UCBL</a>
-            <a href="#main_div">Nos Intervenants</a>
-            <a href="#div_2">Infos Pratiques</a>
+            <a href="#div2">Nos Intervenants</a>
+            <a href="#div4">Element n°2</a> <!-- Soit on laisse evenement soit on met Le forum directement ? -->
             <a href="#div5">Element n°3</a> 
+            <a href="#div6">Element n°4</a>
+            <a href="#div7">Element n°5</a>
         </div>
     </header>
     <main>
-      <div style="border-top: 2px solid white; margin: 0 auto; margin-top: 100px; width: 90%;"></div>
-      <div id="divpres">
-        <!-- <h1>Forum Poursuite d'Études <br/>Bourg-en-Bresse</h1> -->
-        <img class="logofpe" src="img/event/logo_FPE.png" alt="Logo FPE">
-      </div>
-      <div style="border-top: 2px solid white; margin: 0 auto; width: 90%;"></div>
-
+        <div id="divpres">
+          <h1>FPB Bourg-en-Bresse</h1>
+        </div>
         <div id="main_div">
             <div class="container">
                 <h1>Nos Intervenants :</h1>
@@ -37,7 +36,7 @@
                     <div class="card">
                       <div class="card-front">
                         <p>IUT Claude Bernard Lyon 1</p>
-                        <ul class="ul_1">
+                        <ul>
                           <li>BUT Informatique</li>
                           <li>BUT GEA</li>
                           <li>BUT GTE</li>
@@ -55,7 +54,7 @@
                     <div class="card">
                       <div class="card-front">
                         <p>IUT Lumière Lyon 2</p>
-                        <ul class="ul_spe">
+                        <ul>
                           <li>BUT GESTION DES ENTREPRISES ET DES ADMINISTRATIONS</li>
                           <li>BUT GESTION DES ENTREPRISES ET DES ADMINISTRATIONS</li>
                           <li>BUT MANAGEMENT DE LA LOGISTIQUE ET DES TRANSPORTS</li>
@@ -74,7 +73,7 @@
                     <div class="card">
                       <div class="card-front">
                         <p>IUT Jean Moulin Lyon 3</p>
-                        <ul class="ul_1">
+                        <ul>
                           <li>BUT Information Communication</li>
                           <li>BUT Carrières Juridiques - Métiers du Droit et de l'Entreprise</li>
                           <li>BUT Gestion Administrative et Commerciale des Organisations</li>
@@ -85,13 +84,15 @@
                         <a href="#" class="btn">Plus d'informations</a>
                       </div>
                     </div>
-                  </div>               
+                  </div>
+          
+                  
           
                   <div class="card-wrapper">
                     <div class="card">
                       <div class="card-front">
                         <p>INSA Lyon</p>
-                        <ul class="ul_1">
+                        <ul>
                           <li>Formation Initiale aux Métiers d'Ingénieur</li>
                           <li>Formation Ingénieur Second Cycle</li>
                           <li>Master Recherche</li>
@@ -109,7 +110,7 @@
                     <div class="card">
                       <div class="card-front">
                         <p>ISG Lyon</p>
-                        <ul class="ul_1">
+                        <ul>
                           <li>Master of Business Administration</li>
                           <li>Doubles diplômes internationaux  </li>
                         </ul>
@@ -125,7 +126,7 @@
                     <div class="card">
                       <div class="card-front">
                         <p>IRI Lyon</p>
-                        <ul class="ul_1">
+                        <ul>
                           <li>Licence Pro des réseaux informatiques et des télécommunications </li>
                           <li>Licence Pro conception de métier industriel</li>
                           <li>Licence Pro commercialisation de produits et services</li>
@@ -146,27 +147,28 @@
             <div class="div2_in">
             <div>
                 <h1>Infos Pratiques</h1>
-                <iframe class="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22089.605333996402!2d5.2247851999999995!3d46.206463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f352331dd6ea89%3A0x7b1bbcd7e79a2d6b!2sSalle%20Des%20F%C3%A9tes!5e0!3m2!1sfr!2sfr!4v1642069907089!5m2!1sfr!2sfr" width="650" height="250" style="border:0;" allowfullscreen="" loading="lazy""></iframe>
+                <iframe class="gmaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22089.605333996402!2d5.2247851999999995!3d46.206463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f352331dd6ea89%3A0x7b1bbcd7e79a2d6b!2sSalle%20Des%20F%C3%A9tes!5e0!3m2!1sfr!2sfr!4v1642069907089!5m2!1sfr!2sfr" width="650" height="250" style="border:0;" allowfullscreen="" loading="lazy" style="box-shadow: rgba(29, 29, 29, 0.87) 15px 15px 15px;"></iframe>
             </div>
             <div class="Info_pratique_texte">
-              <ul>
-                <li><span class="date">Le Forum de Poursuite d'Étude de Bourg-en-Bresse</span></li>
-                <li>aura lieu le <span class="date">12 Février 2022</span></li>
-                <li>à la <i>Salle des Fêtes</i> situé au Centre-Ville</li>
-                <li></li>
-                <li></li>
-              </ul>
-                
+                <h2>Salle des fêtes :</h2>
+                <ul>
+                    <li>Esplanade de la Comdédie</li>
+                    <li>01000 Bourg-en-Bresse</li>
+                    <li>Accessible via n'importe quel Bus :</br>
+                        >>> Arrêt <i>'Carré Amiot'</i> puis 5 minutes à pied </li>
+                </ul>
             </div>
             </div>
             <div class="div2_in2">
               <div class="div2_in2_text">
-                <h2>Adresse :</h2>
                 <ul>
-                    <li>Esplanade de la Comédie</li>
-                    <li>01000 Bourg-en-Bresse</li>
-                    <li>Accessible via n'importe quel Bus :</br>
-                        >>> Arrêt <i>'Carré Amiot'</i> puis 5 minutes à pied </li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
                 </ul>
               </div>
               <a href="https://www.bourgenbresse.fr/annuaire/184/210-salle-des-fetes.htm" alt="liens salle des fetes" target="_blank"><img src="img/event/salledesfetes.jpg" alt="Image Ainterexpo"></a>
@@ -186,11 +188,7 @@
           </div>
         </div>
         <div id="div_3">
-            <h1>Participer à l'évenement</h1>
-            <p>Pour toutes demande de contact merci de vous rendre sur le liens ci-dessous :</p>
-            <div class="div_a_formulaire">
-              <a class="formulaire" href="formulaire.html" target="_blank">Formulaire</a>
-            </div>
+            
         </div>
         
 
