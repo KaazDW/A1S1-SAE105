@@ -192,7 +192,29 @@ header{
     text-align: center;
     margin: 0;
 }
-
+ul{
+    list-style-type: none;
+}
+.div_a_formulaire{
+margin: 0 auto;
+}
+.formulaire{
+    text-align: center;
+    margin: 50px 45%;
+    display: inline-block;
+    background-color: var(--lorange);
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: black;
+    font-size: 19px;
+    padding: 014px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.date{
+    color: var(--red)
+}
 
 
 
